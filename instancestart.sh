@@ -12,7 +12,7 @@ instanceID=$1
 actions=$2
 
 #get instance status
-checkStatus=`aws ec2 describe-instance-status --instance-ids ${instanceID} | grep -E "running/passed" | wc -l`
+checkStatus=`aws ec2 describe-instance-status --instance-ids ${instanceID} | grep -E "running|passed" | wc -l`
 
 if [ "${checkStatus}" -eq "3" ]; then
         instanceStatus=started
