@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # check if less than 2 arguments passed
-if [ $# -ne 4 ]
+if [ $# -ne 5 ]
 then
   echo "Usage: $0 [availabilityZone] [volumeType] [volumeSize] [volumeKey] [volumeName]"
   exit 1;
