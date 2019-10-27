@@ -8,7 +8,7 @@ then
 fi
 
 #arguments
-instanceID=$1
+instanceID=i-0c1a31baed50f0cf5
 actions=$2
 
 #get instance status
